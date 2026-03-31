@@ -1,1 +1,41 @@
-# 2-
+<hr>
+<h2>Интерактивная форма</h2>
+<form onsubmit="return false;">    
+    <!-- Раскрывающийся список -->
+    <p>Выберите:
+    <select size="1" name="dropdown">
+        <option selected value="1">Первый</option>
+        <option value="2">Второй</option>
+        <option value="3">Третий</option>
+        <option value="4">Четвертый</option>
+    </select>
+    </p>
+    <p>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" maxlength="50" size="30" value="">
+    </p>
+    <!-- Поле для пароля -->
+    <p>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" maxlength="35" size="20">
+    </p>
+    
+    <!-- Флажок -->
+    <p>
+        <input type="checkbox" id="send_mail" name="send_mail" value="yes" checked>
+        <label for="send_mail">Отправлять уведомления на почту</label>
+    </p>
+    <p>
+        Выберите способ оплаты:<br>
+        <input type="radio" id="visa" name="payment_type" value="visa">
+        <label for="visa">Visa</label><br>
+        <input type="radio" id="mastercard" name="payment_type" value="mastercard">
+        <label for="mastercard">Mastercard</label><br>
+        <input type="radio" id="amex" name="payment_type" value="AmEx" checked>
+        <label for="amex">American Express</label>
+    </p>   
+    <p>
+        <input type="submit" value="Послать">
+        <input type="reset" value="Очистка">
+    </p>
+</form>
